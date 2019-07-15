@@ -46,6 +46,8 @@ int main()
   printf("value of pointer variable = %p \n", pointer_p);
   //Observe the difference
   printf("value stored at pointer = %d \n", *pointer_p);
+  //There can be arrays of pointers and pointers can be arguments as well
+  //Arrays can be passed as an argument by using pointers
 
   return 0;
 }
