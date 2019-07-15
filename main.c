@@ -10,7 +10,7 @@ int main()
   int age; //variable name= 'age'; data type = integer
   int year=21; //values can be directly initialized
   float pi=3.14; // data type = float
-  char the_one = 'M';// don't forget to use the single quotes
+  char the_one = 'M';// don't forget to use the single quotes for char
   double accurate_pi; // large float/ decimal
     /*RULES FOR VARIABLES
     1. variable name cannot start with a numbers
@@ -40,13 +40,50 @@ int main()
     (%) - Modulus (remainder)
 
     There is an order of precedence which goes like
-    paranthesis-->multiplication-->division-->modulus-->addition-->subtraction 
+    paranthesis-->multiplication-->division-->modulus-->addition-->subtraction
   */
     int a = 2, b = 4;
     int sum; // sometimes the data type of result maybe different than data type of operands (usually division).
     sum = a+b;
     printf("The sum is %d\n", sum); //can play around with these values and operators
 
+// IF-ELSE conditions and SCANF (user input)
+  printf("Please enter the age:\n"); //asking for user input
+  scanf("%d", &age);
+    /* ABOUT SCANF
+    %d placeholder used since we are asking for interger input.
+    And we need to store the user input into the variable age, hence that.
+    the symbol '&' is used since we need to store at the ADDRESS OF variable age.
+    so & symbol is basically used to denote address.
+    */
+  if (age>18) //condition(s) is specified here
+  { //This code will run if the condiiton is TRUE. If not,
+    // curly bracket thing is skipped.
+    printf("The age %d is greater than 18\n", age);
+  }
+  if (age==18)
+  { //This condiiton will also be checked regardless
+    //of the result of the previous if condition.
+    printf("The age is 18\n");
+  }
+  else if (age<18)
+  { /*This condition will ONLY be checked if the previous
+     condition was not fulfilled. Not ALL previous conditions
+     just the one immediately before this one.
+     So, The first IF will be checked. second IF will be checked.
+     'else if' will only be checked if the second IF condiiton is
+     not met. If the conditions for the second IF are met, then
+     'else if' is skipped.
+    */
+    printf("The age is less than 18");
+  }
+  else
+  {//This will run if all previous if-else-if conditions
+   // are false. Starting from the latest IF. That Will
+   // be the second IF in this case.
+   return 1; // returns an error.
 
-  return 0;              // If the program ran successfully
+  }
+
+  return 0; // If the program ran successfully
 }
