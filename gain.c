@@ -1,6 +1,14 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+//Please start from int main()
+//Test function defined here in reference to line 75
+void test_function() //void is used since it is not returning any value.
+{                 //at least the function name needs to be mentioned before the function is called.
+  printf("This is a print from test function\n");
+}
+
+//START HERE
 int main()
 {
   //Ternary (conditional) operator
@@ -48,6 +56,7 @@ int main()
       i++;  // another way of "i = i+1"
     } //end of loop
   printf("End of while; Now do-while\n"); //extra line for clarity
+
   //do while loop
     i =0;
     do     //the loop is run at least once. unlike while loop
@@ -55,12 +64,26 @@ int main()
       printf("Value of i is %d\n",i);
       i++;
     } while(i<=3); //condition checked after running the loop
-  printf("End of do-while; Now for loop");
+  printf("End of do-while; Now for loop\n");
+
   //for loop
   for (int i = 0; i <= 3; i++) // for(initialization; condition; increment)
   {
     printf("Value of i is %d\n",i);
   } //the increment part is executed right before the end of loop
+
+  /*Functions
+  Every c program has at least 1 function: main
+  syntax for declaration of function
+
+  type name (type1 arg1, type2 arg2, ...)
+  {
+    code for function
+  }
+
+  */
+  test_function(); //this function is defined before main()
+
 
   return 0;
 }
