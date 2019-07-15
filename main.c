@@ -75,15 +75,15 @@ int main()
      not met. If the conditions for the second IF are met, then
      'else if' is skipped.
     */
-    printf("The age is less than 18");
+    printf("The age is less than 18\n");
   }
   else
   {//This will run if all previous if-else-if conditions
    // are false. Starting from the latest IF. That Will
    // be the second IF in this case.
-   return 1; // returns an error.
-
+   printf("The age is GREATER THAN 18\n"); // returns an error.
   }
+  // If-else-if is a lot of times, nested. 
 
   return 0; // If the program ran successfully
 }
