@@ -2,10 +2,19 @@
 #include<stdlib.h>
 
 //Please start from int main()
-//Test function defined here in reference to line 75
+//Test function defined here in reference to line 84
 void test_function() //void is used since it is not returning any value.
 {                 //at least the function name needs to be mentioned before the function is called.
   printf("This is a print from test function\n");
+}
+void Sum(int a, int b)  //another function that is called later. Line 97
+{
+  int sum = a+b;
+  printf("The sum is %d\n",sum);
+}
+int Product(int a, int b) //Line 100
+{
+  return a*b;
 }
 
 //START HERE
@@ -84,6 +93,11 @@ int main()
   */
   test_function(); //this function is defined before main()
 
+  //Adding parameters and arguments to functions
+  Sum(50,60); //function defined before main()
+
+  //Using 'return' in a function; Notice how the function is called.
+  printf("The product added to 10 is %d\n",Product(2,4)+10); //function defined before main()
 
   return 0;
 }
