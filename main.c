@@ -1,6 +1,10 @@
 #include<stdio.h>
 #include<stdlib.h>
 //this is a single line comment
+
+/*This is a multi line comment.
+It can extend to as many lines as you
+wish for it to.*/
 int main()
 {
   int age; //variable name= 'age'; data type = integer
@@ -28,9 +32,21 @@ int main()
 
   puts("This is another sentence\n"); //Alternative to printf
 
-  /*This is a multi line comment.
-  It can extend to as many lines as you
-  wish for it to.*/
+  /*MATHEMATICAL OPERATORS
+    (+) - Addition
+    (-) - Subtraction
+    (*) - Multiplication
+    (/) - Division
+    (%) - Modulus (remainder)
+
+    There is an order of precedence which goes like
+    paranthesis-->multiplication-->division-->modulus-->addition-->subtraction 
+  */
+    int a = 2, b = 4;
+    int sum; // sometimes the data type of result maybe different than data type of operands (usually division).
+    sum = a+b;
+    printf("The sum is %d\n", sum); //can play around with these values and operators
+
 
   return 0;              // If the program ran successfully
 }
