@@ -28,11 +28,24 @@ int main()
   //Printing a multi dimensional array
   for (int i=0;i<2;i++)
   {
-    for (int j=0;j<3;j++)
+    for (int j=0;j<3;j++)  //This is a nested array
     {
       printf ("MultiArray[%d][%d]=%d\n",i,j,MultiArray[i][j]);
     }
   }
+  //To be Noted that Arrays can be passed as function arguments as well.
+
+  /*POINTERS!!
+  A variable whos value is the address of another variable.
+  */
+  int var = 30;
+  printf("address of var = %p \n", &var); // &var denotes the address of var
+  //Format specifier for pointers is %p
+  int *pointer_p;
+  pointer_p = &var;
+  printf("value of pointer variable = %p \n", pointer_p);
+  //Observe the difference
+  printf("value stored at pointer = %d \n", *pointer_p);
 
   return 0;
 }
