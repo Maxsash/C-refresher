@@ -74,6 +74,7 @@ int main()
      'else if' will only be checked if the second IF condiiton is
      not met. If the conditions for the second IF are met, then
      'else if' is skipped.
+     There can be as many 'else-ifs' as you want.
     */
     printf("The age is less than 18\n");
   }
@@ -83,7 +84,7 @@ int main()
    // be the second IF in this case.
    printf("The age is GREATER THAN 18\n"); // returns an error.
   }
-  // If-else-if is a lot of times, nested. 
+  // If-else-if can be nested. 
 
   return 0; // If the program ran successfully
 }
