@@ -40,5 +40,21 @@ int main()
         printf("Grade unavailable\n");
     }
 
+  //While loop
+    int i=0;
+    while (i<=10) //loop runs while i is less than or equal to 10
+    {
+      printf("Value of i is %d\n",i);
+      i++;  // another way of "i = i+1"
+    } //end of loop
+  printf("End of while; Now do-while\n"); //extra line for clarity
+  //do while loop
+    i =0;
+    do     //the loop is run at least once. unlike while loop
+    {
+      printf("Value of i is %d\n",i);
+      i++;
+    } while(i<=10); //condition checked after running the loop
+
   return 0;
 }
