@@ -42,7 +42,7 @@ int main()
 
   //While loop
     int i=0;
-    while (i<=10) //loop runs while i is less than or equal to 10
+    while (i<=3) //loop runs while i is less than or equal to 10
     {
       printf("Value of i is %d\n",i);
       i++;  // another way of "i = i+1"
@@ -54,7 +54,13 @@ int main()
     {
       printf("Value of i is %d\n",i);
       i++;
-    } while(i<=10); //condition checked after running the loop
+    } while(i<=3); //condition checked after running the loop
+  printf("End of do-while; Now for loop");
+  //for loop
+  for (int i = 0; i <= 3; i++) // for(initialization; condition; increment)
+  {
+    printf("Value of i is %d\n",i);
+  } //the increment part is executed right before the end of loop
 
   return 0;
 }
